@@ -1,0 +1,49 @@
+
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="hsl(237, 60%, 15%)" />
+      <stop offset="50%" stop-color="hsl(297, 70%, 10%)" />
+      <stop offset="100%" stop-color="hsl(57, 80%, 6%)" />
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="hsl(237, 80%, 50%)" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="hsl(297, 90%, 20%)" stop-opacity="0" />
+    </radialGradient>
+    <filter id="blurFilter">
+      <feGaussianBlur stdDeviation="30" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="url(#bgGrad)" />
+
+  <!-- Ambient Light Sphere -->
+  <circle cx="960" cy="432" r="432" fill="url(#glow)" filter="url(#blurFilter)" />
+  
+  <!-- Cinematic Grid / Framing -->
+  <rect x="40" y="40" width="1840" height="1000" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="2" rx="16" />
+  <line x1="633.6" y1="40" x2="633.6" y2="1040" stroke="rgba(255,255,255,0.04)" stroke-dasharray="8 8" />
+  <line x1="1267.2" y1="40" x2="1267.2" y2="1040" stroke="rgba(255,255,255,0.04)" stroke-dasharray="8 8" />
+
+  <!-- Vignette -->
+  <rect width="1920" height="1080" fill="none" stroke="rgba(0,0,0,0.6)" stroke-width="40" />
+
+  <!-- Badge Header -->
+  <rect x="70" y="70" width="160" height="36" rx="18" fill="rgba(99, 102, 241, 0.3)" stroke="rgba(99, 102, 241, 0.6)" stroke-width="1.5" />
+  <text x="150" y="93" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" letter-spacing="1.5">CINEFORGE 4K</text>
+
+  <!-- Central Camera Reticle -->
+  <circle cx="960" cy="520" r="45" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2" />
+  <circle cx="960" cy="520" r="6" fill="#6366f1" />
+  <line x1="895" y1="520" x2="915" y2="520" stroke="rgba(255,255,255,0.4)" stroke-width="2" />
+  <line x1="1005" y1="520" x2="1025" y2="520" stroke="rgba(255,255,255,0.4)" stroke-width="2" />
+  <line x1="960" y1="455" x2="960" y2="475" stroke="rgba(255,255,255,0.4)" stroke-width="2" />
+  <line x1="960" y1="565" x2="960" y2="585" stroke="rgba(255,255,255,0.4)" stroke-width="2" />
+
+  <!-- Lower Overlay Text Card -->
+  <rect x="70" y="900" width="1780" height="110" rx="12" fill="rgba(11, 15, 25, 0.85)" stroke="rgba(255,255,255,0.12)" />
+  <text x="95" y="935" fill="#818cf8" font-family="sans-serif" font-size="13" font-weight="bold" letter-spacing="1">CINEMATIC FRAME CUE</text>
+  <text x="95" y="970" fill="#e2e8f0" font-family="sans-serif" font-size="16" font-weight="500">Shot 1: Steve / Explorer holding a torch, staring into a cavern chasm. Golden hour volumetric block rays, soft ambient occlusion, warm torch...</text>
+  <text x="1825" y="970" fill="#94a3b8" font-family="monospace" font-size="13" text-anchor="end">ID: 0b949048</text>
+</svg>

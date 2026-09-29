@@ -1,0 +1,49 @@
+
+<svg width="720" height="1280" viewBox="0 0 720 1280" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="hsl(14, 60%, 15%)" />
+      <stop offset="50%" stop-color="hsl(74, 70%, 10%)" />
+      <stop offset="100%" stop-color="hsl(194, 80%, 6%)" />
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="hsl(14, 80%, 50%)" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="hsl(74, 90%, 20%)" stop-opacity="0" />
+    </radialGradient>
+    <filter id="blurFilter">
+      <feGaussianBlur stdDeviation="30" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="720" height="1280" fill="url(#bgGrad)" />
+
+  <!-- Ambient Light Sphere -->
+  <circle cx="360" cy="512" r="288" fill="url(#glow)" filter="url(#blurFilter)" />
+  
+  <!-- Cinematic Grid / Framing -->
+  <rect x="40" y="40" width="640" height="1200" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="2" rx="16" />
+  <line x1="237.60000000000002" y1="40" x2="237.60000000000002" y2="1240" stroke="rgba(255,255,255,0.04)" stroke-dasharray="8 8" />
+  <line x1="475.20000000000005" y1="40" x2="475.20000000000005" y2="1240" stroke="rgba(255,255,255,0.04)" stroke-dasharray="8 8" />
+
+  <!-- Vignette -->
+  <rect width="720" height="1280" fill="none" stroke="rgba(0,0,0,0.6)" stroke-width="40" />
+
+  <!-- Badge Header -->
+  <rect x="70" y="70" width="160" height="36" rx="18" fill="rgba(99, 102, 241, 0.3)" stroke="rgba(99, 102, 241, 0.6)" stroke-width="1.5" />
+  <text x="150" y="93" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" letter-spacing="1.5">CINEFORGE 4K</text>
+
+  <!-- Central Camera Reticle -->
+  <circle cx="360" cy="620" r="45" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2" />
+  <circle cx="360" cy="620" r="6" fill="#6366f1" />
+  <line x1="295" y1="620" x2="315" y2="620" stroke="rgba(255,255,255,0.4)" stroke-width="2" />
+  <line x1="405" y1="620" x2="425" y2="620" stroke="rgba(255,255,255,0.4)" stroke-width="2" />
+  <line x1="360" y1="555" x2="360" y2="575" stroke="rgba(255,255,255,0.4)" stroke-width="2" />
+  <line x1="360" y1="665" x2="360" y2="685" stroke="rgba(255,255,255,0.4)" stroke-width="2" />
+
+  <!-- Lower Overlay Text Card -->
+  <rect x="70" y="1100" width="580" height="110" rx="12" fill="rgba(11, 15, 25, 0.85)" stroke="rgba(255,255,255,0.12)" />
+  <text x="95" y="1135" fill="#818cf8" font-family="sans-serif" font-size="13" font-weight="bold" letter-spacing="1">CINEMATIC FRAME CUE</text>
+  <text x="95" y="1170" fill="#e2e8f0" font-family="sans-serif" font-size="16" font-weight="500">Shot 1 of Scene undefined: Steve / Explorer (dark hair, wearing travel attire) in Setting aligned with Minecraft Lore premise, mood Triumpha...</text>
+  <text x="625" y="1170" fill="#94a3b8" font-family="monospace" font-size="13" text-anchor="end">ID: 46101937</text>
+</svg>
